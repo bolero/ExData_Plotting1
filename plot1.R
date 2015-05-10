@@ -1,8 +1,8 @@
 # Plot 1 for exploratory data analysis couse
-# Script assumes that source data is present in the same folder as script
+# Script assumes that source data is present in the parent folder of script
 
 # Read the power consumption data
-power = read.csv('household_power_consumption.txt', sep=';', stringsAsFactors=F,
+power = read.csv('../household_power_consumption.txt', sep=';', stringsAsFactors=F,
                  na.strings="?")
 
 # Convert date to 'date'
