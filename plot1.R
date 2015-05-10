@@ -2,7 +2,8 @@
 # Script assumes that source data is present in the same folder as script
 
 # Read the power consumption data
-power = read.csv('household_power_consumption.txt', sep=';', stringsAsFactors=F)
+power = read.csv('household_power_consumption.txt', sep=';', stringsAsFactors=F,
+                 na.strings="?")
 
 # Convert date to 'date'
 power$Date = as.Date(power$Date, format = '%d/%m/%Y')
